@@ -7,12 +7,12 @@ new Vue({
         body:'jkdhjdhjd'}
         ]
       },
-      methods: {
-        recuperarPost: function () {
+      //methods: {
+        created: function () {
           this.$http.get('https://jsonplaceholder.typicode.com/posts').then(function (data) {
                  this.notas=data.body;
                  console.log(data)           
           })
         }
-      }
+      //}
 })
